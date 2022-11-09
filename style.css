@@ -1,0 +1,102 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    border: 2px dashed black;
+    padding: 20px;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    padding: 10px 20px 20px 20px;
+    background: rgba(47, 53, 223, 0.177);
+    border: 2px solid rgb(75, 52, 250);
+    color: rgb(75, 52, 250);
+}
+
+.header__title {
+    text-align: center;
+}
+
+nav {
+    border: 2px solid rgb(169, 4, 240);
+    padding: 20px;
+    background: rgba(169, 9, 238, 0.332);
+    color: black;
+}
+
+a {
+    margin-right: 10px;
+}
+
+main {
+    border: 2px solid rgb(75, 52, 250);
+    padding: 20px;
+    background: rgba(47, 53, 223, 0.177);
+    margin: 20px 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 10px;
+    }
+    article {
+        min-width: 100%;
+        margin-bottom: 10px;
+    }
+    nav {
+        text-align: center;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+    }
+    article {
+        min-width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+article {
+    border: 2px solid rgb(169, 4, 240);
+    padding: 20px;
+    background: rgba(169, 9, 238, 0.332);
+}
+
+article:last-child{
+    margin-right: 0;
+}
+
+footer {
+    border: 2px solid rgb(75, 52, 250);
+    padding: 20px;
+    background: rgba(47, 53, 223, 0.177);
+    margin: 20px 0 0 0;  
+}
